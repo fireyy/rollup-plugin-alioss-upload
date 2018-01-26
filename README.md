@@ -10,14 +10,14 @@ Add to rollup config:
 import aliossUpload from "./rollup/rollup-plugin-alioss-upload";
 
 export default {
-	plugins:
-	[
+  plugins:
+  [
     aliossUpload(),
     aliossUpload({
       configFile: ".alioss.config.json",
       prefix: "/"
     })
-	],
+  ],
 };
 ```
 
